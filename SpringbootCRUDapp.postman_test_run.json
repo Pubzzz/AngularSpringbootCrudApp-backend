@@ -1,0 +1,194 @@
+{
+	"id": "e99e7784-c493-42d2-9dcf-e3870ed329a6",
+	"name": "SpringbootCRUDapp",
+	"timestamp": "2021-07-22T04:46:14.025Z",
+	"collection_id": "16728548-aa4fcd4e-2b24-4254-b06b-d34468317b50",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 0,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "993d6ed0-9b77-4b7c-bd96-7b4a16ae1ef3",
+			"name": "Get available country records",
+			"url": "http://localhost:8080/springboot-crud-app/rest/v2/countries",
+			"time": 4,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				4
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "1371b35b-9ace-4695-9c17-10dbb4240fbd",
+			"name": "Add new country record",
+			"url": "http://localhost:8080/springboot-crud-app/rest/v2/countries",
+			"time": 4,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				4
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "72db0869-e13f-4aa2-b809-c60a590edd4f",
+			"name": "Delete country record",
+			"url": "http://localhost:8080/springboot-crud-app/rest/v2/countries/2",
+			"time": 12,
+			"responseCode": {
+				"code": 500,
+				"name": "Internal Server Error"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				12
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "afc174b6-7321-4395-bace-7e5e8c8468af",
+			"name": "Update country record",
+			"url": "http://localhost:8080/springboot-crud-app/rest/v2/countries/3",
+			"time": 7,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				7
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "3e4ee65d-d549-4e7c-a591-aafe2b5d9b8a",
+			"name": "Get one country record",
+			"url": "http://localhost:8080/springboot-crud-app/rest/v2/country/3",
+			"time": 4,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				4
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "f01c04e5-2c68-478b-92e2-f65f1e2bfafb",
+			"name": "Dummy Data Response",
+			"url": "http://localhost:8080/springboot-crud-app/rest/v2/dummy_url",
+			"time": 6,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				6
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "aadb1b7f-f9a1-48a2-a1f4-dc5fd94070b3",
+			"name": "Not allowed Method",
+			"url": "http://localhost:8080/springboot-crud-app/rest/v2/countries/SriLanka",
+			"time": 6,
+			"responseCode": {
+				"code": 405,
+				"name": "Method Not Allowed"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				6
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "d5a6b795-48c8-4b14-9901-c155f9c0b75b",
+			"name": "Bad request",
+			"url": "http://localhost:8080/springboot-crud-app/rest/v2/country/SriLanka",
+			"time": 4,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				4
+			],
+			"allTests": [
+				{}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 47,
+	"collection": {
+		"requests": [
+			{
+				"id": "993d6ed0-9b77-4b7c-bd96-7b4a16ae1ef3",
+				"method": "GET"
+			},
+			{
+				"id": "1371b35b-9ace-4695-9c17-10dbb4240fbd",
+				"method": "POST"
+			},
+			{
+				"id": "72db0869-e13f-4aa2-b809-c60a590edd4f",
+				"method": "DELETE"
+			},
+			{
+				"id": "afc174b6-7321-4395-bace-7e5e8c8468af",
+				"method": "PUT"
+			},
+			{
+				"id": "3e4ee65d-d549-4e7c-a591-aafe2b5d9b8a",
+				"method": "GET"
+			},
+			{
+				"id": "f01c04e5-2c68-478b-92e2-f65f1e2bfafb",
+				"method": "GET"
+			},
+			{
+				"id": "aadb1b7f-f9a1-48a2-a1f4-dc5fd94070b3",
+				"method": "GET"
+			},
+			{
+				"id": "d5a6b795-48c8-4b14-9901-c155f9c0b75b",
+				"method": "GET"
+			}
+		]
+	}
+}
