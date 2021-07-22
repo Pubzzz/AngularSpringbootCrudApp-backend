@@ -1,0 +1,153 @@
+{
+	"info": {
+		"_postman_id": "aa4fcd4e-2b24-4254-b06b-d34468317b50",
+		"name": "SpringbootCRUDapp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get available country records",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/springboot-crud-app/rest/v2/countries",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"springboot-crud-app",
+						"rest",
+						"v2",
+						"countries"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add new country record",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"countryName\":\"Spain\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/springboot-crud-app/rest/v2/countries",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"springboot-crud-app",
+						"rest",
+						"v2",
+						"countries"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete country record",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/springboot-crud-app/rest/v2/countries/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"springboot-crud-app",
+						"rest",
+						"v2",
+						"countries",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "Update country record",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"countryName\":\"America\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/springboot-crud-app/rest/v2/countries/3",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"springboot-crud-app",
+						"rest",
+						"v2",
+						"countries",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get one country record",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/springboot-crud-app/rest/v2/country/3",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"springboot-crud-app",
+						"rest",
+						"v2",
+						"country",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
